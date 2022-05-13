@@ -456,7 +456,7 @@ hr.styled-separator::after {
 }
 
 a {
-	color: #cd2653;
+	color: black;
 	text-decoration: underline;
 }
 
@@ -1086,7 +1086,7 @@ button.toggle {
 .color-accent,
 .color-accent-hover:focus,
 .color-accent-hover:hover {
-	color: #cd2653;
+	color: black;
 }
 
 /* BACKGROUND COLOR */
@@ -1386,14 +1386,15 @@ body:not(.enable-search-modal) .header-titles-wrapper {
 }
 
 .site-title a {
-	color: inherit;
+	color: black;
 	display: block;
 	text-decoration: none;
 }
 
 .site-title a:hover,
 .site-title a:focus {
-	text-decoration: underline;
+	      text-decoration: none;
+        	color: black;
 }
 
 .site-description {
@@ -1624,7 +1625,7 @@ ul.primary-menu {
 }
 
 .primary-menu a {
-	color: inherit;
+	color: black;
 	display: block;
 	line-height: 1.2;
 	text-decoration: none;
@@ -6040,6 +6041,7 @@ a.to-the-top > * {
 
 	.footer-menu li {
 		margin: 1.2rem 2.4rem 0 0;
+		color: 
 	}
 
 	.powered-by-wordpress {

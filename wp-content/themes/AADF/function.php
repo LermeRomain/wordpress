@@ -11,17 +11,7 @@ function AADF_register_assets()
 }
 add_action('wp_enqueue_scripts', 'AADF_register_assets');
 
-function AADF_supports()
-{
-	add_theme_support('title-tag');
-	add_theme_support('post-thumbnails');
-	add_theme_support('menus');
-	register_nav_menu('header', 'En tête du menu');
-	register_nav_menu('footer', 'Pied de page');
 
-	add_image_size('post-thumbnail', 350, 215, true);
-}
-add_action('after_setup_theme', 'AADF_supports');
 
 // Chargement des styles et des scripts Bootstrap sur WordPress
 function wpbootstrap_styles_scripts(){
@@ -34,11 +24,7 @@ function wpbootstrap_styles_scripts(){
 add_action('wp_enqueue_scripts', 'wpbootstrap_styles_scripts');
 ?>
 
-<?php
-function  get_header() {
-    register_nav_menu( 'menu_principal', __( 'Menu principal' ) );
-}
-add_action( 'init', 'enregistre_mon_menu' );?>
+
 <?php get_template_part('loop'); ?>
 <?php get_footer(); ?>
 

@@ -1581,6 +1581,10 @@ ul.primary-menu {
 	margin: -0.8rem 0 0 -1.6rem;
 }
 
+.primary-menu > li > a {
+	color: black;
+}
+
 .primary-menu .icon {
 	display: block;
 	height: 0.7rem;
@@ -1630,7 +1634,7 @@ ul.primary-menu {
 }
 
 .primary-menu a {
-	color: inherit;
+	color: black;
 	display: block;
 	line-height: 1.2;
 	text-decoration: none;
